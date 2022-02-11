@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Sistema De Nacionalidade Para Idiotas</h1>
+    Digite o pais que você está morando atualmente: <input type="text" name="paisOrigem" id="paisOrigem">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var pO = document.getElementById('paisOrigem')
+            var res = document.querySelector('div#res')
+            var pais = pO
+            res.innerHTML = `<p>O país que você acabou de digitar foi ${pais}, você sabia disso?</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você <strong>não</strong> mora no Brasil.</p> `
+            }else {
+                res.innerHTML += `<p>Parabéns! Você acaba de confirmar que mora no Brasil.</p>`
+            }
+        }
+    </script>
+</body>
+</html>

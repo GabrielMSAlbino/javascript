@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body {
+            background-color: darkslateblue;
+            color: rgb(30, 26, 58); /*E é assim que se comenta em CSS*/
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fudeu...</h1>
+    <!--É assim que comenta no html-->
+    <p>Vou começar a fazer as históias dos meus personagens de RPG assim...</p>
+    <script>
+        //var N1 = parseInt(prompt('Digiti um número: '))
+        //var N2 = parseInt(prompt('Digite outro número: '))
+        
+        var N1 = Number(prompt('Digiti um número: '))
+        //Usar o "Number" faz com que o JavaScript decida se é inteiro ou real
+        var N2 = Number(prompt('Digite outro número: '))
+        var Soma = N1 + N2
+        
+        //Para converter em string, pode se usar String(X) ou X.toString()
+        
+        alert(`A soma entre ${N1} e ${N2} resulta em ${Soma}`)
+    //Ao invés de usar o sinalde +, também pode usar o ${} entre ``
+    //X.toFixed(y) mostra y casas depois da virgula
+    //X.toFixed(y).replace('.', ',') nesse caso, está trocando o ponto pela virgula
+    //XtoLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) converte a formatção da string para a do brasil...
+
+    </script>
+</body>
+</html>
